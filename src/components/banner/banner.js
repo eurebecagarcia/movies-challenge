@@ -6,7 +6,7 @@ export default function Banner({ data }) {
 
   return (
     <styles.Container imagem={imagem}>
-      <h1>{data?.original_title}</h1>
+      <h1>{data?.original_title || data?.name}</h1>
       <p>{data?.overview}</p>
     </styles.Container>
   );
